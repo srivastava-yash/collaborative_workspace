@@ -24,13 +24,14 @@ app.get('/login', (req, res) => {
 })
 
 app.get('/Register', (req, res) => {
+
     res.render("LR/register.ejs")
 })
 
 
-// mongoose.connect('mongodb+srv://user:user@cluster0.m8z5u.mongodb.net/<blog>?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
-// .then(() => console.log("Database connected"))
-// .catch(err => console.log(err))
+mongoose.connect('mongodb://localhost/colab', { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log("Database connected"))
+    .catch(err => console.log(err))
 
 app.listen(8000, () => {
     console.log("Listening at port 8000")

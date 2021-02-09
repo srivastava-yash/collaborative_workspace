@@ -5,31 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="LR/style.css">
-    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin Login</title>
 </head>
 
 <body>
     <div class="container">
         <div class="login-label">
-            <h1>Register</h1>
+            <h1>Admin Login</h1>
         </div>
-        <form action="/admin/register" method="POST">
+        <form action="/admin/login" method="POST">
             <div id="email" class="form-element">
                 <input required="true" type="email" placeholder="Enter Email" name="email" class="field">
             </div>
             <div id="password" class="form-element">
-                <input required="true" type="password" placeholder="Enter Password" name="password" class="field">
-            </div>
-            <div id="cpassword" class="form-element">
-                <input required="true" type="password" placeholder="Enter Password again" name="cpassword"
-                    class="field">
+                <input required="true" type="password" placeholder="Enter Password" name="password" class=" field">
             </div>
             <div class="form-element">
-                <input class="submit-btn" type="submit" value="Register">
+                <input class="submit-btn" type="submit" value="Login">
             </div>
         </form>
-        <a href="/login" id="l">Login</a>
+        <a href="/admin/register">Register</a>
     </div>
 </body>
 

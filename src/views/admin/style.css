@@ -9,7 +9,7 @@ body {
     width: 320px;
     height: 420px;
     padding: 70px 30px;
-    /* background-color: aliceblue; */
+    background-color: #e7e6e1;
 }
 
 .container input{
@@ -49,7 +49,7 @@ body {
     background: transparent;
     border-style: none;
     border-bottom: 1px solid black;
-    color: blanchedalmond;
+    color: black;
 }
 
 #reg-btn {
@@ -63,3 +63,4 @@ body {
 #l {
     margin-left: 135px;
 }
+

@@ -1,0 +1,45 @@
+body{
+    background-color: #e7e6e1;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 50px;
+    width: 200px;
+    height: 50px;
+}
+
+.admin-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+
+.login-btn {
+    border: solid 3px;
+    border-radius: 10%;
+    padding: 5px;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #f2a154;
+    color: #f7f6e7;
+    text-decoration: none;
+
+}
+
+.org-setup {
+    background-color: #314e52;
+    color: #f2a154;
+}

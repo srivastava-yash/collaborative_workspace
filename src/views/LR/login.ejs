@@ -14,18 +14,22 @@
         <div class="login-label">
             <h1>Login</h1>
         </div>
-        <form action="/login" method="POST">
-            <div id="email" class="form-element">
-                <input required="true" type="email" placeholder="Enter Email" name="email" class="field">
-            </div>
-            <div id="password" class="form-element">
-                <input required="true" type="password" placeholder="Enter Password" name="password" class=" field">
-            </div>
-            <div class="form-element">
-                <input class="submit-btn" type="submit" value="Login">
-            </div>
-        </form>
-        <a href="/register">Register</a>
+        <% if(messages.error) { %>
+            <%= messages.error %>
+                <% } %>
+                    <form action="/login" method="POST">
+                        <div id="email" class="form-element">
+                            <input required="true" type="email" placeholder="Enter Email" name="email" class="field">
+                        </div>
+                        <div id="password" class="form-element">
+                            <input required="true" type="password" placeholder="Enter Password" name="password"
+                                class=" field">
+                        </div>
+                        <div class="form-element">
+                            <input class="submit-btn" type="submit" value="Login">
+                        </div>
+                    </form>
+                    <a href="/register">Register</a>
     </div>
 </body>
 

@@ -14,16 +14,25 @@
         <div class="login-label">
             <h1>Register</h1>
         </div>
-        <form action="/admin/register" method="POST">
+        <form action="/register" method="POST">
+            <div id="name" class="form-element">
+                <input required="true" type="text" placeholder="Enter Name" name="name" class="field">
+            </div>
             <div id="email" class="form-element">
                 <input required="true" type="email" placeholder="Enter Email" name="email" class="field">
             </div>
+            <div id="orgg" class="form-element">
+                <label for="org">Choose an Organisation: </label>
+                <select name="org">
+                    <% organisations.forEach( organisation=> { %>
+                        <option>
+                            <%= organisation.orgName %>
+                        </option>
+                        <% }) %>
+                </select>
+            </div>
             <div id="password" class="form-element">
                 <input required="true" type="password" placeholder="Enter Password" name="password" class="field">
-            </div>
-            <div id="cpassword" class="form-element">
-                <input required="true" type="password" placeholder="Enter Password again" name="cpassword"
-                    class="field">
             </div>
             <div class="form-element">
                 <input class="submit-btn" type="submit" value="Register">
